@@ -8,3 +8,5 @@ The site is made to look like a blatant rip-off of our Connect 4 site.
 A game of 4 AI players can take upwards of an hour or more (just specify 0 players at the start - it's a feature, not a bug)
 
 Made in collaboration with Kevin and Jatin
+
+Original site preserved at https://the404devs.github.io/crazy8/ (minus one missing screenshot)
