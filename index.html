@@ -1,0 +1,150 @@
+<!--Crazy 8s in the Java Console
+By Owen and Kevin and Jaitn
+Mr. Krnic
+May 25, 2018
+This is the homepage for our Crazy 8s game-->
+
+<html lang="en">
+	<head> 
+		<title> 
+			ICS4U Assignment #4 
+		</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="js/scripts.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<!--Header div, this is the first thing the user sees.-->
+			<div class="header">
+				<!-- <h1>
+					Crazy 8s
+				</h1> -->
+				<br>
+				<div class="content">
+					<img src="img/c.gif">
+					<img src="img/r.gif">
+					<img src="img/a.gif">
+					<img src="img/z.gif">
+					<img src="img/y.gif">
+					<img src="img/8.gif">
+					<img src="img/s.gif">
+				</div>
+				<h6 style="color: yellow; font-size: 30px">
+					The Classic <del>Vertical Four-In-A-Row Game</del> Get-Rid-Of-Eight-Of-Your-Cards Game
+				</h6> 
+
+				<h6 style="color: yellow; font-size: 30px; padding-top: 20px">
+					Java Edition
+				</h6> 
+				<br>
+			</div>
+
+			<!--Bar with Mario running across the screen-->	
+			<div id="navbar" class="navbar">				
+				<div class="navWrapper">
+					<span class="navButton" style="font-size:30px;cursor:pointer;left: 0;" onclick="location.href = 'http://www.sdsscomputers.com/OwenGoodwin/';"><i" class="fa fa-laptop"></i></span></a>
+					<span class="navButton" style="font-size:30px;cursor:pointer;left: 70px;" onclick="location.href = 'index.html';"><i" class="fa fa-home"></i></span></a>
+					<span class="navButton" style="font-size:30px;cursor:pointer;left: 140px;" onclick="location.href = 'download.html';"><i" class="fa fa-download"></i></span></a>
+					<span class="navButton" style="font-size:30px;cursor:pointer;left: 210px;" onclick="location.href = 'gallery.html';"><i" class="fa fa-image"></i></span></a>
+					<span class="navButton" style="font-size:30px;cursor:pointer;left: 280px;" onclick="location.href = 'help.html';"><i" class="fa fa-question-circle-o"></i></span></a>
+					<span class="navButton" style="font-size:30px;cursor:pointer;left: 350px;" onclick="alert('We\'ve updated our privacy policy.');"><i" class="fa fa-hand-peace-o"></i></span></a>
+				</div>
+
+
+			</div>
+
+			<br>
+			
+
+			<!--Main page content-->
+
+			<div class="content">
+				<h2>The classic game of <del>Connect 4</del> Crazy 8s has been recreated in the Java Console!</h2>
+				<hr>
+				<img src="img/cards.jpg" width="40%">
+				<p>Crazy 8s was introduced in <del>1974</del> the 1930s and became an instant classic, stealing the hearts of children worldwide, kind of like the Grim Reaper.</p>
+				<p>4 players begin the game with 8 cards, and the objective is to get rid of all of one's cards first. To play a card, the suit or value must match that of the card last played. 8s are "wild" cards, allowing the person who played it to change the suit to another</p>
+				<br>
+				<p>In our game, you may play by yourself or as many friends as you like, and the game will make as many computer players as needed to have a four player game.</p>
+				<br>
+				<img src="img/card2.png"><img src="img/card15.png"><img src="img/card28.png"><img src="img/card41.png">
+				<br>
+				<p>Any card with a value of 2 makes the next player draw 2 cards</p>
+				<br>
+				<img src="img/card8.png"><img src="img/card21.png"><img src="img/card34.png"><img src="img/card47.png">
+				<br>
+				<p>Any card with a value of 8 allows the player to change the current suit to whatever they want.</p>
+				<br>
+				<img src="img/card12.png"><img src="img/card25.png"><img src="img/card38.png"><img src="img/card51.png">
+				<br>
+				<p>Any Queen makes the next player miss their turn.</p>
+
+				
+				<br>
+				<h2><u>Before you play!</u></h2>
+				<P>You may run into issues with the suit icons not displaying correctly while playing. Don't worry, we have a simple 3-step method to fix this, complete with pictures!</P>
+				<h2>Step 1.</h2>
+				<img src="img/screen4.png">
+				<p>Right-click at the top of the console window</p>
+				<br>
+				<h2>Step 2.</h2>
+				<img src="img/screen5.png">
+				<p>Click on "Properties"</p>
+				<br>
+				<h2>Step 3.</h2>
+				<img src="img/screen6.png">
+				<p>Select "Lucida Console" as the font, and click "OK".</p>
+
+				<br>
+				<h2><u>About the classes and objects in this game...</u></h2>
+				<h4>Player</h4>
+				<img src="img/player.png">
+				<br>
+				<p>Every player is assigned a 'Player' object. Each object has a String to hold their name, and a hand of cards, which is a Deck object. The hand is public, so that all parts of the game can access it. Player objects require a name in the form of a String to be created. Player objects can show all of the cards in their hand, return the name of the player, add a card to the player's hand when given a card, and sort the cards in the hand by value and suit.</p>
+				<br>
+				<h4>AI</h4>
+				<img src="img/ai.png">
+				<br>
+				<p>The AI class is a child of the Player class. It can do everything a normal Player can, and is assigned to the players that are controlled by the computer. It is created in the same manner as a Player. AIs can taunt the other players, returning Strings of bad jokes and rude comments.</p>
+				<br>
+				<h4>Deck</h4>
+				<img src="img/deck.png">
+				<br>
+				<p>The Deck class is a child of Java's ArrayList, and so it can be resized and added to and everything just like an ArrayList. A Deck requires no parameters to be created, and is initialized with all 52 cards inside. Decks can be shuffled using the Fisher-Yates algorithm, can return the Card at the top of the Deck, or when given an int value return a Card at that position in the array. Deck can play a card from a specific spot in the deck, which returns a Card and then removes it from the Deck. When given a Card, it can be added to the Deck. Deck can return a boolean value indicating whether or not it is empty, as well as an integer representing the numer of Cards contained within. Deck is used for the deck that all players draw from, as well as each player's indiviual hands.</p>
+				<br>
+				<h4>Pile</h4>
+				<img src="img/pile.png">
+				<br>
+				<p>The Pile class is a child of the Deck class, so it can do everything a Deck can do, only better. Well, that"s debatable. It's created the same way as Deck, but does not contain any cards upon being initialized. Pile can return information on the Card at the top of the Pile, and Cards can be added to the Pile at a specific int position. Pile is used to hold all of the disCARDed cards.</p>
+				<br>
+				<br>
+				<h4>Card</h4>
+				<img src="img/card.png">
+				<br>
+				<p>The Card class is kind of important to this game. Each individual card has an int representing it's numerical value, a String representing it's suit, and a String representing the face of the Card (♣5, for example). When created, a Card object needs an int value and a String suit, because most cards have values and suits, right? Cards can return their values in the form of an int, their suits in the form of a String, and their face in the form of a String. </p>
+				<br>
+				<h4>Game</h4>
+				<img src="img/game.png">
+				<br>
+				<p>The mainGame class is, well, the main game. It's responsible for creating instances of all the other classes. Most importantly, it gives each player options to view their cards, play a card, pick up a card, and sort their cards when it is their turn. The game class creates the proper number of Players and AIs depending on how many people are playing. The game class is what writes all those messages to the screen so the user knows what's going on. Imagine if I just got rid of every single System.out.println("");.  </p>
+				<br>
+				<br>
+				<h4>Class Map, in case you don't want to read all of the descriptions.</h4>
+				<img src="img/classes.png">
+				<br>
+			</div>			
+
+			<!--Standard footer for all pages, with some navigation buttons as well.-->
+			<div class="footer">
+				<p> 					
+					This page was last updated on <b>05/27/18 at 10:44</b>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
