@@ -9,4 +9,4 @@ A game of 4 AI players can take upwards of an hour or more (just specify 0 playe
 
 Made in collaboration with Kevin and Jatin
 
-Original site preserved at https://the404devs.github.io/crazy8/ (minus one missing screenshot)
+Original site preserved at https://crazy8.the404.nl (minus one missing screenshot)
